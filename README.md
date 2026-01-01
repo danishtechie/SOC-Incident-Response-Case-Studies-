@@ -27,6 +27,7 @@ Incident Case Studies Included
 1. Suspicious PowerShell Activity on a Windows Endpoint
 
 Category: Endpoint Security
+
 Focus Areas:
 
 Process execution analysis
@@ -41,9 +42,16 @@ Suspicious activity investigated and validated
 
 No persistence or lateral movement identified
 
+MITRE ATT&CK Mapping:
+
+T1059.001 – Command and Scripting Interpreter: PowerShell
+
+T1027 – Obfuscated Files or Information
+
 2. Suspected Brute-Force Login Attempt Against a Privileged Account
 
 Category: Authentication Security
+
 Focus Areas:
 
 Failed login pattern analysis
@@ -58,9 +66,16 @@ Brute-force attempt detected and contained
 
 No unauthorized access observed
 
+MITRE ATT&CK Mapping:
+
+T1110 – Brute Force
+
+T1110.001 – Password Guessing
+
 3. Login from an Unusual Geographic Location
 
 Category: Identity & Access Management
+
 Focus Areas:
 
 Anomalous login detection
@@ -75,9 +90,14 @@ Activity confirmed as legitimate
 
 Alert closed after verification
 
+MITRE ATT&CK Mapping:
+
+T1078 – Valid Accounts
+
 4. Potential Lateral Movement via Remote Service Creation
 
 Category: Endpoint & Network Security
+
 Focus Areas:
 
 Event correlation across multiple hosts
@@ -92,9 +112,16 @@ Suspicious service activity identified and contained
 
 No further propagation observed
 
+MITRE ATT&CK Mapping:
+
+T1021 – Remote Services
+
+T1543.003 – Create or Modify System Process: Windows Service
+
 5. Suspicious PowerShell Script Download and Execution
 
 Category: Endpoint Security
+
 Focus Areas:
 
 Script-based attack detection
@@ -109,10 +136,19 @@ Malicious execution pattern identified
 
 Endpoint protected from further exploitation
 
+MITRE ATT&CK Mapping:
+
+T1059.001 – Command and Scripting Interpreter: PowerShell
+
+T1105 – Ingress Tool Transfer
+
+T1562.001 – Disable or Modify Security Tools
+
 6. Credential Dumping Attempt via LSASS Access
 
 Category: Credential Access
 Severity: Critical
+
 Focus Areas:
 
 LSASS access monitoring
@@ -127,9 +163,16 @@ Credential access attempt blocked
 
 Endpoint isolated before compromise
 
+MITRE ATT&CK Mapping:
+
+T1003 – OS Credential Dumping
+
+T1003.001 – LSASS Memory
+
 7. Web Application Attack Attempt (SQL Injection)
 
 Category: Web Security
+
 Focus Areas:
 
 Web server log analysis
@@ -143,6 +186,10 @@ Outcome:
 Attack attempt detected and mitigated
 
 No data exposure or application compromise
+
+MITRE ATT&CK Mapping:
+
+T1190 – Exploit Public-Facing Application
 
 Approach & Methodology
 
